@@ -129,9 +129,8 @@ public interface Logger {
     default LoggingEventBuilder atLevel(Level level) {
         if (isEnabledForLevel(level)) {
             return makeLoggingEventBuilder(level);
-        } else {
-            return NOPLoggingEventBuilder.singleton();
         }
+        return NOPLoggingEventBuilder.singleton();
     }
 
     
@@ -252,9 +251,8 @@ public interface Logger {
     default LoggingEventBuilder atTrace() {
         if (isTraceEnabled()) {
             return makeLoggingEventBuilder(TRACE);
-        } else {
-            return NOPLoggingEventBuilder.singleton();
         }
+        return NOPLoggingEventBuilder.singleton();
     }
 
     /**
@@ -449,9 +447,8 @@ public interface Logger {
     default LoggingEventBuilder atDebug() {
         if (isDebugEnabled()) {
             return makeLoggingEventBuilder(DEBUG);
-        } else {
-            return NOPLoggingEventBuilder.singleton();
         }
+        return NOPLoggingEventBuilder.singleton();
     }
 
     /**
@@ -590,9 +587,8 @@ public interface Logger {
     default LoggingEventBuilder atInfo() {
         if (isInfoEnabled()) {
             return makeLoggingEventBuilder(INFO);
-        } else {
-            return NOPLoggingEventBuilder.singleton();
         }
+        return NOPLoggingEventBuilder.singleton();
     }
 
     /**
@@ -731,9 +727,8 @@ public interface Logger {
     default LoggingEventBuilder atWarn() {
         if (isWarnEnabled()) {
             return makeLoggingEventBuilder(WARN);
-        } else {
-            return NOPLoggingEventBuilder.singleton();
         }
+        return NOPLoggingEventBuilder.singleton();
     }
 
     /**
@@ -873,9 +868,8 @@ public interface Logger {
     default LoggingEventBuilder atError() {
         if (isErrorEnabled()) {
             return makeLoggingEventBuilder(ERROR);
-        } else {
-            return NOPLoggingEventBuilder.singleton();
         }
+        return NOPLoggingEventBuilder.singleton();
     }
 
 }
