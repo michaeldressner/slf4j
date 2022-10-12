@@ -71,6 +71,7 @@ public class Reload4jMDCAdapter implements MDCAdapter {
         org.apache.log4j.MDC.remove(key);
     }
 
+    @Override
     @SuppressWarnings({ "rawtypes", "unchecked" })
     public Map getCopyOfContextMap() {
         Map old = org.apache.log4j.MDC.getContext();

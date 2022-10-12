@@ -385,6 +385,7 @@ public class SimpleLog implements Log, Serializable {
      * Log a message with debug log level.
      * 
      */
+    @Override
     public final void debug(Object message) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_DEBUG)) {
@@ -397,6 +398,7 @@ public class SimpleLog implements Log, Serializable {
      * Log an error with debug log level.
      * 
      */
+    @Override
     public final void debug(Object message, Throwable t) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_DEBUG)) {
@@ -409,6 +411,7 @@ public class SimpleLog implements Log, Serializable {
      * Log a message with trace log level.
      * 
      */
+    @Override
     public final void trace(Object message) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_TRACE)) {
@@ -421,6 +424,7 @@ public class SimpleLog implements Log, Serializable {
      * Log an error with trace log level.
      * 
      */
+    @Override
     public final void trace(Object message, Throwable t) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_TRACE)) {
@@ -433,6 +437,7 @@ public class SimpleLog implements Log, Serializable {
      * Log a message with info log level.
      * 
      */
+    @Override
     public final void info(Object message) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_INFO)) {
@@ -445,6 +450,7 @@ public class SimpleLog implements Log, Serializable {
      * Log an error with info log level.
      * 
      */
+    @Override
     public final void info(Object message, Throwable t) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_INFO)) {
@@ -457,6 +463,7 @@ public class SimpleLog implements Log, Serializable {
      * Log a message with warn log level.
      * 
      */
+    @Override
     public final void warn(Object message) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_WARN)) {
@@ -469,6 +476,7 @@ public class SimpleLog implements Log, Serializable {
      * Log an error with warn log level.
      * 
      */
+    @Override
     public final void warn(Object message, Throwable t) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_WARN)) {
@@ -481,6 +489,7 @@ public class SimpleLog implements Log, Serializable {
      * Log a message with error log level.
      * 
      */
+    @Override
     public final void error(Object message) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_ERROR)) {
@@ -493,6 +502,7 @@ public class SimpleLog implements Log, Serializable {
      * Log an error with error log level.
      * 
      */
+    @Override
     public final void error(Object message, Throwable t) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_ERROR)) {
@@ -505,6 +515,7 @@ public class SimpleLog implements Log, Serializable {
      * Log a message with fatal log level.
      * 
      */
+    @Override
     public final void fatal(Object message) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_FATAL)) {
@@ -517,6 +528,7 @@ public class SimpleLog implements Log, Serializable {
      * Log an error with fatal log level.
      * 
      */
+    @Override
     public final void fatal(Object message, Throwable t) {
 
         if (isLevelEnabled(SimpleLog.LOG_LEVEL_FATAL)) {
@@ -534,6 +546,7 @@ public class SimpleLog implements Log, Serializable {
      * to be avoided when the message will be ignored by the logger.
      * 
      */
+    @Override
     public final boolean isDebugEnabled() {
 
         return isLevelEnabled(SimpleLog.LOG_LEVEL_DEBUG);
@@ -549,6 +562,7 @@ public class SimpleLog implements Log, Serializable {
      * to be avoided when the message will be ignored by the logger.
      * 
      */
+    @Override
     public final boolean isErrorEnabled() {
 
         return isLevelEnabled(SimpleLog.LOG_LEVEL_ERROR);
@@ -564,6 +578,7 @@ public class SimpleLog implements Log, Serializable {
      * to be avoided when the message will be ignored by the logger.
      * 
      */
+    @Override
     public final boolean isFatalEnabled() {
 
         return isLevelEnabled(SimpleLog.LOG_LEVEL_FATAL);
@@ -579,6 +594,7 @@ public class SimpleLog implements Log, Serializable {
      * to be avoided when the message will be ignored by the logger.
      * 
      */
+    @Override
     public final boolean isInfoEnabled() {
 
         return isLevelEnabled(SimpleLog.LOG_LEVEL_INFO);
@@ -594,6 +610,7 @@ public class SimpleLog implements Log, Serializable {
      * to be avoided when the message will be ignored by the logger.
      * 
      */
+    @Override
     public final boolean isTraceEnabled() {
 
         return isLevelEnabled(SimpleLog.LOG_LEVEL_TRACE);
@@ -609,6 +626,7 @@ public class SimpleLog implements Log, Serializable {
      * to be avoided when the message will be ignored by the logger.
      * 
      */
+    @Override
     public final boolean isWarnEnabled() {
 
         return isLevelEnabled(SimpleLog.LOG_LEVEL_WARN);

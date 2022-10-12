@@ -52,12 +52,14 @@ public class Reload4jMultithreadedInitializationTest extends org.slf4j.testHarne
         System.clearProperty(CONFIG_FILE_KEY);
     }
 
+    @Override
     protected long getRecordedEventCount() {
         List<LoggingEvent> eventList = getRecordedEvents();
         assertNotNull(eventList);
         return eventList.size();
     }
 
+    @Override
     protected int extraLogEvents() {
         return NUM_LINES_BY_RECURSIVE_APPENDER;
     }
